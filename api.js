@@ -138,9 +138,9 @@ export const winRequestAnimationFrame = function (callback) {
 
 export const winCancelAnimationFrame = function (id) {
 
-		const canceST = window.cancelAnimationFrame 		|| 
-										window.mozCancelAnimationFrame	 	||
-										window.clearTimeout;
+		const canceST = window.cancelAnimationFrame 	|| 
+		                window.mozCancelAnimationFrame	||
+		                window.clearTimeout;
 		canceST (id);
 }
 
